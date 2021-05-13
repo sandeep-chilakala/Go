@@ -44,5 +44,5 @@ func main() {
 	c := circle{10}
 	measure(&r)
 	measure(&c)
-	fmt.Println('Exit')
+	fmt.Println("Exit")
 }
