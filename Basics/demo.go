@@ -101,8 +101,19 @@ func isPalandromeStr(str string) bool {
 	return temp == str
 }
 
+func reverseSlice(strList []string) {
+	defer fmt.Println("Reverse is done")
+	revStrList := make([]string, len(strList)) //for declaring a empty slice
+	for i := 0; i < len(strList); i++ {
+		revStrList[i] = strList[(len(strList)-1)-i]
+	}
+	fmt.Println(revStrList)
+}
+
 func main() {
-	fmt.Println(isPalandromeStr("tet"))
+	s := []string{"1", "2", "3"}
+	reverseSlice(s)
+	//fmt.Println(isPalandromeStr("tet"))
 	//fmt.Println(len("test"))
 
 	/*
