@@ -62,7 +62,6 @@ func findWhenIsDay(day string) (b string) {
 	//fmt.Println("todayStr ", todayStr, dayInt)
 	todayInt := daysOfWeekMap[todayStr]
 	//fmt.Println("dayInt ", dayInt, todayInt)
-	//diff := dayInt - todayInt
 	switch dayInt - todayInt {
 	case 0:
 		fmt.Println("Today")

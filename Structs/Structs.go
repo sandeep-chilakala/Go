@@ -31,5 +31,4 @@ func main() {
 	p.update("hello", 30)
 	fmt.Println(p)
 	update(&p)
-	fmt.Println(p)
 }
